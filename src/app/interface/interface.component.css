@@ -1,0 +1,40 @@
+/*GLobal*/
+* {
+    overflow-x: hidden;
+}
+
+
+.container {
+    margin-top: 20px;
+}
+
+/*
+///
+//Header/
+///
+/*/
+header {
+    background: white;
+    border: solid 1px rgb(182, 182, 182);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.add-btn {
+    margin-top: 5px;
+}
+
+.col-xs-2 {
+    min-width: 200px;
+}
+
+/*
+//
+//Body/
+//
+*/
+body {
+    margin-top: 20px;
+    border: solid 1px rgb(182, 182, 182);
+    border-radius: 5px;
+}

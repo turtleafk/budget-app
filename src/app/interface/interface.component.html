@@ -1,13 +1,46 @@
 <div class="container">
-    <div class="row">
-        <div class="col-xs-2">
-            <select class="form-control" name="options" id="options">
-                <option (click)="getValue($event)" value="income">Income</option>
-                <option (click)="getValue($event)" value="Expense">Expense</option>
-            </select>
-            <input class="form-control" type="number" id="number">
-            <label [innerHTML]="" for="name"></label>
-            <input class="form-control" type="text" id="name">
+    <header>
+        <div class="row first-row">
+            <div class="col-xs-2">
+                <select class="form-control" name="options" id="options" (change)="getValue($event)">
+                    <option 
+                        value="income" 
+                        (click)="getValue($event)">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+            </div>
         </div>
-    </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-2">
+                <label [innerHTML]="numberLabel" for="number"></label>
+                <input class="form-control" type="number" id="number">
+            </div>
+            <div class="col-xs-4">
+                <label [innerHTML]="nameLabel" for="name"></label>
+                <input class="form-control" type="text" id="name">
+            </div>
+            <div class="col-xs-2">
+                <br>
+                <button class="btn btn-primary add-btn">Add</button>
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <div class="container body">
+            <div class="row">
+                <div class="col-xs-6">
+                    Income
+                </div>
+                <div class="col-xs-6">
+                    Expenses
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </body>
+    
 </div>
