@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2">
+            <select class="form-control" name="options" id="options">
+                <option (click)="getValue($event)" value="income">Income</option>
+                <option (click)="getValue($event)" value="Expense">Expense</option>
+            </select>
+            <input class="form-control" type="number" id="number">
+            <label [innerHTML]="" for="name"></label>
+            <input class="form-control" type="text" id="name">
+        </div>
+    </div>
+</div>
