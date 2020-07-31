@@ -21,7 +21,7 @@ header {
 }
 
 .add-btn {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .col-xs-2 {
@@ -37,4 +37,27 @@ body {
     margin-top: 20px;
     border: solid 1px rgb(182, 182, 182);
     border-radius: 5px;
+}
+
+.expense-div {
+    border-left: solid 1px rgb(161, 154, 154);
+}
+
+.income-div,
+.expense-div {
+    height: 100%;
+}
+
+.inc-exp-div {
+    height: 50vh;
+}
+
+/*
+//
+//Bottom/
+//
+*/
+
+.budget {
+    text-align: center;
 }
